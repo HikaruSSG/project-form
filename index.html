@@ -22,6 +22,17 @@
         <input type="hidden" name="access_key" value="f1b5f811-0bc0-46f8-91c4-16bfcdab23ab">
 
         <div class="form-group">
+            <label for="email">Email</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-address-card-o"></i>
+                    </div>
+                </div>
+                <input id="email" name="email" placeholder="my_email@example.com" type="email" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
             <label>Package</label>
             <div>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -53,8 +64,17 @@
                     placeholder="https://www.realtimecolors.com/?colors=070606-f8f5f5-8a0000-d4a3a3-cd7a7a&fonts=Inter-Inter"
                     type="text" class="form-control" aria-describedby="palletHelpBlock">
             </div>
-            <span id="palletHelpBlock" class="form-text text-muted">copy the url from realtime.com or choose from the set of colorhunt.co(optional)</span>
+            <span id="palletHelpBlock" class="form-text text-muted">copy the url from realtime.com or choose from the
+                set of colorhunt.co(optional)</span>
             <span id="palletHelpBlock" class="form-text text-muted">blanks means developer will handle it</span>
+            <a target="_blank" href="https://www.realtimecolors.com/">go to realtimecolor.com</a><br>
+            <a target="_blank" href="https://colorhunt.co/">go to colorhunt.com</a>
+            <div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="let developer choose">
+                    <label for="checkbox_0" class="custom-control-label">Or Let the Developer Choose</label>
+                </div>
+            </div>
         </div>
         <div class="form-group">
             <label for="webHosting">Web Hosting Period</label>
