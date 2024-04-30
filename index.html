@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        padding: 4rem;
+    }
+</style>
+
+<body>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f1b5f811-0bc0-46f8-91c4-16bfcdab23ab">
+
+        <div class="form-group">
+            <label>Package</label>
+            <div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="package" id="package_0" type="radio" checked="checked" required="required"
+                        class="custom-control-input" value="1">
+                    <label for="package_0" class="custom-control-label">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="package" id="package_1" type="radio" required="required" class="custom-control-input"
+                        value="2">
+                    <label for="package_1" class="custom-control-label">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="package" id="package_2" type="radio" required="required" class="custom-control-input"
+                        value="3">
+                    <label for="package_2" class="custom-control-label">3</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pallet">Color pallet</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-link"></i>
+                    </div>
+                </div>
+                <input id="pallet" name="pallet"
+                    placeholder="https://www.realtimecolors.com/?colors=070606-f8f5f5-8a0000-d4a3a3-cd7a7a&fonts=Inter-Inter"
+                    type="text" class="form-control" aria-describedby="palletHelpBlock">
+            </div>
+            <span id="palletHelpBlock" class="form-text text-muted">copy the url from realtime.com or choose from the set of colorhunt.co(optional)</span>
+            <span id="palletHelpBlock" class="form-text text-muted">blanks means developer will handle it</span>
+        </div>
+        <div class="form-group">
+            <label for="webHosting">Web Hosting Period</label>
+            <div>
+                <select id="webHosting" name="webHosting" aria-describedby="webHostingHelpBlock" required="required"
+                    class="custom-select">
+                    <option value="1">1 Year</option>
+                    <option value="2">2 Year</option>
+                    <option value="3">3 Year</option>
+                    <option value="Self Manage">Self Manage</option>
+                </select>
+                <span id="webHostingHelpBlock" class="form-text text-muted">How long do you need to host your
+                    website?</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="domainNmae">Domain Name</label>
+            <div>
+                <select id="domainNmae" name="domainNmae" aria-describedby="domainNmaeHelpBlock" class="custom-select">
+                    <option value="developer">Handle by Developer</option>
+                    <option value="self-host">Handle Your Own</option>
+                </select>
+                <span id="domainNmaeHelpBlock" class="form-text text-muted">Will you handle your domain name or let
+                    developer do it for you?</span>
+            </div>
+        </div>
+
+
+        <button type="submit">Submit Form</button>
+
+    </form>
+
+</body>
+
+</html>
